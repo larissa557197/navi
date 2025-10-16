@@ -37,13 +37,13 @@ A aplicação utiliza um modelo de linguagem generativa (como GPT) para reescrev
 ---
 
 ## 🧠 Como Funciona
-O usuário digita o texto original.
-Escolhe um estilo de escrita no seletor.
-Clica em "Traduzir".
-O app chama o método translate do NaviService, que envia uma requisição para a IA generativa com:
-🧩 Uma mensagem de sistema definindo o papel da IA (tradutor criativo).
-💬 Uma mensagem de usuário contendo o texto e o estilo desejado.
-A IA retorna o texto traduzido no estilo escolhido, que é exibido na tela.
+1. O usuário digita o texto original.
+2. Escolhe um estilo de escrita no seletor.
+3. Clica em "Traduzir".
+4. O app chama o método translate do NaviService, que envia uma requisição para a IA generativa com:
+- 🧩 Uma mensagem de sistema definindo o papel da IA (tradutor criativo).
+- 💬 Uma mensagem de usuário contendo o texto e o estilo desejado.
+5. A IA retorna o texto traduzido no estilo escolhido, que é exibido na tela.
 
 ---
 
