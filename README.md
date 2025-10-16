@@ -49,7 +49,8 @@ A aplicação utiliza um modelo de linguagem generativa (como GPT) para reescrev
 
 ## 🧑‍💻 Exemplo de Uso
 
-Texto Original            |        	Estilo	Resultado
-"Hoje o dia está bonito!" | 	Gíria das ruas	"Mano, o dia tá brabo demais!"
-"Hoje o dia está bonito!"	| Juridiquês	"Constata-se, de forma inequívoca, que as condições climáticas se apresentam favoráveis."
-"Hoje o dia está bonito!"	| Fausto Silva	"Ô louco, bicho! Que dia bonito, meu!"
+| Texto Original            |        	Estilo	Resultado                                                                              |
+|---------------------------|--------------------------------------------------------------------------------------------------------|
+| "Hoje o dia está bonito!" | 	Gíria das ruas	"Mano, o dia tá brabo demais!"                                                       |
+| "Hoje o dia está bonito!"	| Juridiquês	"Constata-se, de forma inequívoca, que as condições climáticas se apresentam favoráveis."  |
+| "Hoje o dia está bonito!"	| Fausto Silva	"Ô louco, bicho! Que dia bonito, meu!"                                                   |
