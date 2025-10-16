@@ -20,9 +20,9 @@ import com.vaadin.flow.router.Route;
     public class HomeView extends VerticalLayout {
 
         private final NaviService naviService;
-        private TextArea originalTextArea = new NaviTextArea("Texto Original", VaadinIcon.PENCIL.create());
-        private TextArea translatedTextArea = new NaviTextArea("Texto Traduzido", VaadinIcon.OPEN_BOOK.create());
-        private Select<String> selectStyle = new StyleSelector();
+        private final NaviTextArea originalTextArea = new NaviTextArea("Texto Original", VaadinIcon.PENCIL.create());
+        private final NaviTextArea translatedTextArea = new NaviTextArea("Texto Traduzido", VaadinIcon.OPEN_BOOK.create());
+        private final StyleSelector selectStyle = new StyleSelector();
 
         public HomeView(NaviService naviService) {
             this.naviService = naviService;
@@ -50,14 +50,23 @@ import com.vaadin.flow.router.Route;
                     return;
                 }
 
-                var traducao = naviService.translate(original, estilo);
-                translatedTextArea.setValue(traducao);
+               translatedTextArea.setValue("Traduzindo...");
+
+                try {
+                    var traducao = naviService.translate(original, estilo);
+                    translatedTextArea.setValue(traducao);
+                } catch (Exception e) {
+                    translatedTextArea.setValue("Erro ao traduzir: " + e.getMessage());
+                }
+
+
             });
 
             add(new H1("Navi"));
             add(new Paragraph("Tradutor de textos universais"));
             add(split);
             add(new HorizontalLayout(selectStyle, button));
+            setSizeFull();
         }
     }
 

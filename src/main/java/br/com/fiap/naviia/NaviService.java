@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class NaviService {
+
     private final ChatClient chatClient;
 
     public NaviService(ChatClient.Builder buider) {

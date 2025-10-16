@@ -7,6 +7,7 @@ public class StyleSelector extends Select<String> {
 
     public StyleSelector() {
         super();
+        this.setLabel("Estilo de Tradução");
         this.setHelperText("Escolha um estilo de escrita para a tradução");
         this.setPrefixComponent(VaadinIcon.CHAT.create());
         this.setMinWidth("300px");
@@ -17,6 +18,7 @@ public class StyleSelector extends Select<String> {
                 "Caipira",
                 "Fausto Silva"
         );
+        this.setPlaceholder("Selecione um estilo...");
         this.setEmptySelectionAllowed(false);
     }
 }
