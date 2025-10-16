@@ -1,4 +1,4 @@
-🧠 Navi - Tradutor Universal com IA
+# 🧠 Navi - Tradutor Universal com IA
 O Navi é um aplicativo web desenvolvido em Spring Boot com Vaadin e Spring AI, capaz de traduzir textos para diferentes estilos de escrita (como gíria, juridiquês, fala caipira e mais).
 A aplicação utiliza um modelo de linguagem generativa (como GPT) para reescrever o texto mantendo o significado original, mas adaptando o tom conforme o estilo selecionado.
 
