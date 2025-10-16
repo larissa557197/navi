@@ -16,7 +16,8 @@ public class StyleSelector extends Select<String> {
                 "Criança de 2 anos",
                 "Juridiquês",
                 "Caipira",
-                "Fausto Silva"
+                "Fausto Silva",
+                "Craque Neto"
         );
         this.setPlaceholder("Selecione um estilo...");
         this.setEmptySelectionAllowed(false);
